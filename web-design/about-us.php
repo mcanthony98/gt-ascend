@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   
 <head>
@@ -23,7 +23,34 @@
    
     <?php include "includes/header.php";?>
     
-  </head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18145848807"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-18145848807');
+</script>
+
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "wnjq9mebe4");
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-S9N233H044"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-S9N233H044');
+</script>
+</head>
   <!-- Body-->
   <body>
     <?php include "includes/customizer.php";?>
@@ -465,7 +492,7 @@
                     <div class="swiper-wrapper">
                       <!-- Item-->
                       <div class="swiper-slide" data-swiper-binded="#author1">
-                        <p class="text-dark lead mb-0">“At <span class="fw-semibold">Ganiam Tech</span>, we have a deep understanding of the digital world. We see it as a mirror of the real world, where you'll find schools, hospitals, businesses, and yes, even some challenges like thieves and conmen. Today, businesses must be where their customers are, and that's online. Just as you wouldn't ignore your customers in the physical world, you can't afford to overlook them in this digital landscape. <span class="bg-faded-primary">Our story revolves around helping businesses make this transition and succeed in the online world.</span>”</p>
+                        <p class="text-dark lead mb-0">â€œAt <span class="fw-semibold">Ganiam Tech</span>, we have a deep understanding of the digital world. We see it as a mirror of the real world, where you'll find schools, hospitals, businesses, and yes, even some challenges like thieves and conmen. Today, businesses must be where their customers are, and that's online. Just as you wouldn't ignore your customers in the physical world, you can't afford to overlook them in this digital landscape. <span class="bg-faded-primary">Our story revolves around helping businesses make this transition and succeed in the online world.</span>â€</p>
                       </div>
                     </div>
                   </div>

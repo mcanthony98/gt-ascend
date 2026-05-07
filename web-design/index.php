@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -23,6 +23,33 @@
 
   <?php include "includes/header.php"; ?>
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18145848807"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-18145848807');
+</script>
+
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "wnjq9mebe4");
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-S9N233H044"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-S9N233H044');
+</script>
 </head>
 <!-- Body-->
 
@@ -233,7 +260,7 @@
           <div class="card h-100 border-0 shadow-sm">
             <div class="card-body text-center px-4 py-5">
               <i class="ai-quotes fs-2 text-primary mb-3"></i>
-              <p class="mb-4">“Our new website looks amazing and our customers love how easy it is to use. Sales inquiries doubled within weeks.”</p>
+              <p class="mb-4">â€œOur new website looks amazing and our customers love how easy it is to use. Sales inquiries doubled within weeks.â€</p>
               <h6 class="mb-0">Mary W.</h6>
               <span class="text-muted">Retail Business Owner</span>
             </div>
@@ -243,7 +270,7 @@
           <div class="card h-100 border-0 shadow-sm">
             <div class="card-body text-center px-4 py-5">
               <i class="ai-quotes fs-2 text-primary mb-3"></i>
-              <p class="mb-4">“Ganiam Tech delivered on time and kept us informed every step. Our brand now stands out online.”</p>
+              <p class="mb-4">â€œGaniam Tech delivered on time and kept us informed every step. Our brand now stands out online.â€</p>
               <h6 class="mb-0">Samuel K.</h6>
               <span class="text-muted">Logistics Director</span>
             </div>
@@ -253,7 +280,7 @@
           <div class="card h-100 border-0 shadow-sm">
             <div class="card-body text-center px-4 py-5">
               <i class="ai-quotes fs-2 text-primary mb-3"></i>
-              <p class="mb-4">“From concept to launch, the team made everything simple. We now get quality leads directly from the site.”</p>
+              <p class="mb-4">â€œFrom concept to launch, the team made everything simple. We now get quality leads directly from the site.â€</p>
               <h6 class="mb-0">Linda A.</h6>
               <span class="text-muted">Consulting Agency Founder</span>
             </div>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en" data-bs-theme="light">
 
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
@@ -55,20 +55,6 @@
  <meta name="msapplication-TileColor" content="#080032">
  <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
  <meta name="theme-color" content="white">
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11424153475"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-
-        gtag('js', new Date());
-
-        gtag('config', 'AW-11424153475');
-    </script>
 
     <!-- Theme styles + Bootstrap -->
     <link rel="stylesheet" media="screen" href="assets-biz/css/theme.min.css">
@@ -325,6 +311,33 @@
 
     <!-- LightBox -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" />
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18145848807"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-18145848807');
+</script>
+
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "wnjq9mebe4");
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-S9N233H044"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-S9N233H044');
+</script>
 </head>
 
 
@@ -414,7 +427,7 @@
                         </div>
                     </div>
                     <div class="col-lg-5 order-lg-1 text-center text-lg-start me-xl-5">
-                    <span class="badge bg-success bg-opacity-10 fs-sm text-success-light text-success-dark">Take your business to the next level&nbsp; 🚀</span>
+                    <span class="badge bg-success bg-opacity-10 fs-sm text-success-light text-success-dark">Take your business to the next level&nbsp; ðŸš€</span>
 
                         <h1 class="display-4 py-3 my-2 mb-xl-3 text-body text-uppercase"><span class="text-primary">Grow your BIZ,</span> <br> Go Online!</h1>
 
