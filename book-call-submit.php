@@ -14,6 +14,8 @@ if ($name === '' || $email === '' || $company === '' || !filter_var($email, FILT
     exit;
 }
 
+$calendlyBaseUrl = 'https://calendly.com/tutorjamesbenjamin/30min?hide_event_type_details=1&hide_gdpr_banner=1';
+
 $to = 'ganiamtech@gmail.com';
 $subject = 'New Booking Lead Submission';
 $message = "You have a new booking lead submission.\n\n"
@@ -21,7 +23,7 @@ $message = "You have a new booking lead submission.\n\n"
     . "Email: {$email}\n"
     . "Company/Website: {$company}\n"
     . "Source Page: {$sourcePage}\n"
-    . "Calendly Link: https://calendly.com/tutorjamesbenjamin/30min\n";
+    . "Calendly Link: {$calendlyBaseUrl}\n";
 
 $headers = [];
 $headers[] = 'MIME-Version: 1.0';
@@ -32,7 +34,12 @@ $headers[] = 'Reply-To: ' . $email;
 $sent = mail($to, $subject, $message, implode("\r\n", $headers));
 
 if ($sent) {
-    header('Location: book-a%20call.html?status=success');
+    $query = http_build_query([
+        'name' => $name,
+        'email' => $email,
+        'a1' => $company,
+    ]);
+    header('Location: ' . $calendlyBaseUrl . '&' . $query);
     exit;
 }
 
