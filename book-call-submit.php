@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     header('Location: book-a%20call.html');
     exit;
@@ -7,7 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 $name = trim($_POST['name'] ?? '');
 $email = trim($_POST['email'] ?? '');
 $company = trim($_POST['company'] ?? '');
-$sourcePage = trim($_POST['source_page'] ?? 'book-a call.html');
+$sourcePage = trim($_POST['source_page'] ?? 'book-a-call.html');
 
 if ($name === '' || $email === '' || $company === '' || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
     header('Location: book-a%20call.html?status=error');
