@@ -1,16 +1,26 @@
 <?php
+declare(strict_types=1);
+
+const BOOK_PAGE = 'book-a-call.html';
+
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    header('Location: book-a%20call.html');
+    header('Location: ' . BOOK_PAGE, true, 302);
     exit;
 }
 
-$name = trim($_POST['name'] ?? '');
-$email = trim($_POST['email'] ?? '');
-$company = trim($_POST['company'] ?? '');
-$sourcePage = trim($_POST['source_page'] ?? 'book-a-call.html');
+$name = trim((string)($_POST['name'] ?? ''));
+$email = trim((string)($_POST['email'] ?? ''));
+$company = trim((string)($_POST['company'] ?? ''));
+$sourcePage = trim((string)($_POST['source_page'] ?? BOOK_PAGE));
+
+// Basic header-injection hardening for values that end up in email headers/body.
+$name = preg_replace('/[\r\n]+/', ' ', $name) ?? '';
+$email = preg_replace('/[\r\n]+/', '', $email) ?? '';
+$company = preg_replace('/[\r\n]+/', ' ', $company) ?? '';
+$sourcePage = preg_replace('/[\r\n]+/', ' ', $sourcePage) ?? BOOK_PAGE;
 
 if ($name === '' || $email === '' || $company === '' || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    header('Location: book-a%20call.html?status=error');
+    header('Location: ' . BOOK_PAGE . '?status=error', true, 302);
     exit;
 }
 
@@ -39,10 +49,10 @@ if ($sent) {
         'email' => $email,
         'a1' => $company,
     ]);
-    header('Location: ' . $calendlyBaseUrl . '&' . $query);
+header('Location: ' . $calendlyBaseUrl . '&' . $query);
     exit;
 }
 
-header('Location: book-a%20call.html?status=error');
+header('Location: ' . BOOK_PAGE . '?status=error', true, 302);
 exit;
 ?>
